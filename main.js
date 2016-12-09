@@ -41,10 +41,10 @@ window.onload = function() {
 		arm2.render(context);
 		arm3.render(context);
 		
-		if(drawing) {
+		
 			context2.lineTo(arm3.getEndX(), arm3.getEndY());
 			context2.stroke();
-		}
+		
 		requestAnimationFrame(update);
 	}
 }
