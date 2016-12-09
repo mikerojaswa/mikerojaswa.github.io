@@ -5,7 +5,7 @@ window.onload = function() {
 	context2 = canvas2.getContext("2d"),
 	width = canvas.width = canvas2.width = window.innerWidth,
 	height = canvas.height = canvas2.height = window.innerHeight,
-	drawing = false;
+	drawing = true;
 
 
 	var arm = Arm.create(width / 2, height / 2, 100, 0),
@@ -41,10 +41,10 @@ window.onload = function() {
 		arm2.render(context);
 		arm3.render(context);
 		
-		
+		if(drawing) {
 			context2.lineTo(arm3.getEndX(), arm3.getEndY());
 			context2.stroke();
-		
+		}
 		requestAnimationFrame(update);
 	}
 }
