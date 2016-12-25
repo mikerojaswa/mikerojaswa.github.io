@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title></title>
 	
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   <script type="text/javascript" src="arm.js"></script>
-	<script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 
-	
-	<style type="text/css">
-	html, body {
-		margin: 0px;
-		background: url(flume.png);
-		font-family: "Mercury SSm A","Mercury SSm B",sans-serif;
+  <style type="text/css">
+
+  html, body {
+	margin: 0px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ccf26d+0,53e8b9+100 */
+    background: #ccf26d; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ccf26d 0%, #53e8b9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #ccf26d 0%,#53e8b9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #ccf26d 0%,#53e8b9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccf26d', endColorstr='#53e8b9',GradientType=1 ); /* IE6-9 */
+
+	font-family: "Mercury SSm A","Mercury SSm B",sans-serif;
     font-size: 100%;
     font-weight: 400;
     line-height: 1.53333;
@@ -26,24 +31,11 @@
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
     height: 100%;
+    }
 
-   
-
-	}
-
-	canvas {
-		position: relative;
-		margin-top: 15px;
-		z-index: -1;
-	}
-
-
-	
-
-	.page-social__github{
-
-	 	background: url(github.png);
-	 	display: inline-block;
+.page-social__github{
+    background: url(github.png);
+    display: inline-block;
     width: 2.5em;
     height: 2.5em;
     margin: .9;
@@ -55,12 +47,11 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 58% auto;
-	 	
-	 }
+    }
 
-	.page-social__linkedin{
-	 	background: url(linkedin.png);
-	 	display: inline-block;
+.page-social__linkedin{
+	background: url(linkedin.png);
+	display: inline-block;
     width: 2.5em;
     height: 2.5em;
     margin: .9;
@@ -74,9 +65,9 @@
     background-size: 58% auto;
 	}
 
-	.page-social__twitter{
-		background: url(twitter.png);
-		display: inline-block;
+.page-social__twitter{
+	background: url(twitter.png);
+	display: inline-block;
     width: 2.5em;
     height: 2.5em;
     margin: .9;
@@ -90,9 +81,9 @@
     background-size: 58% auto;
 	}
 
-	.page-social__resume{
-		background: url(resume.png);
-		display: inline-block;
+.page-social__resume{
+	background: url(resume.png);
+	display: inline-block;
     width: 2.5em;
     height: 2.5em;
     margin: .9;
@@ -106,31 +97,25 @@
     background-size: 58% auto;
 	}
 
-	.wrapper{
-		margin: center;
-		width: 1060px;
 
-	}
+
 </style>
 
 
 
-<div class="wrapper">
-  <a href="https://github.com/mikerojaswa" class="page-social__github">Github</a>
-  <a href="https://www.linkedin.com/in/mikerojaswa" class="page-social__linkedin js-social-icon">LinkedIn</a>
-  <a href="https://twitter.com/BigMikeyR" class="page-social__twitter js-social-icon">Twitter</a>
-  <a href="http://www.google.com" class="page-social__resume js-social-icon hide-header">Resume</a>
+<div class="container-fluid">
+    <div class="row">
 
+        
+        <div class="col-md-1 col-md-offset-4"><a href="https://github.com/mikerojaswa" class="page-social__github">Github</a></div>
+        <div class="col-md-1"><a href="https://www.linkedin.com/in/mikerojaswa" class="page-social__linkedin js-social-icon">LinkedIn</a></div>
+        <div class="col-md-1"><a href="https://twitter.com/BigMikeyR" class="page-social__twitter js-social-icon">Twitter</a></div>
+        <div class="col-md-1"><a href="http://www.google.com" class="page-social__resume js-social-icon hide-header">Resume</a></div>
+        
 
+    </div>
 </div>
 
-
-
-
-
-
-<canvas id="canvas"></canvas>
-<canvas id="canvas2"></canvas>
 
 </body>
 </html>
