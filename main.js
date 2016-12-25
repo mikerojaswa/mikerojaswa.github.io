@@ -17,7 +17,8 @@ window.onload = function() {
 	arm3.parent = arm2;
 	context2.lineWidth = 0.25;
 
-	update();
+
+	var myVar = setInterval(update, .00001);
 	document.body.addEventListener("click", function() {
 		drawing = true;
 	})
@@ -37,12 +38,12 @@ window.onload = function() {
 		arm3.x = arm2.getEndX();
 		arm3.y = arm2.getEndY();
 		angle += 0.05;
-		
+
 		
 		if(drawing) {
 			context2.lineTo(arm3.getEndX(), arm3.getEndY());
 			context2.stroke();
 		}
-		requestAnimationFrame(update);
+		
 	}
 }
